@@ -1,0 +1,149 @@
+:root {
+    --light-color: #F2F3D9;
+    --medium-color: #030027;
+    --white-text: azure;
+    --font: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --button-gradient: radial-gradient(circle, var(--white-text) 0%, var(--medium-color) 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: flex-start;
+  background: var(--white-text);
+}
+
+.reset-button {
+  font-size: 16px;
+  height: 30px;
+  line-height: 8px;
+  margin-top: 20px;
+}
+
+.win-loss-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-bottom: 10px;
+}
+
+button {
+  background: var(--medium-color);
+  border-radius: 8px;
+  color: var(--white-text);
+  cursor: pointer;
+  font-size: 2em;
+  letter-spacing: 0.21px;
+  line-height: 16px;
+  max-width: 255px;
+  padding: 20px 52px;
+  text-align: center;
+  transition-duration: 0.15s;
+  transition-property: background-color;
+  transition-timing-function: linear;
+  margin-top: 0.6em;
+  float: left;
+}
+
+header {
+  padding: 40px;
+  text-align: center;
+  background: var(--white-text);
+  color: var(--medium-color);
+  border-bottom:30px #879274;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+section {
+  flex: 0 auto;
+  padding: 8px;
+  margin-top: 50px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.question-box {
+  width: 55vw;
+  height: 400px;
+}
+
+.results {
+  width: 30vw;
+  height: 400px;
+}
+
+.card {
+  background: var(--light-color);
+  border: 1px solid #eceff1;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+    rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+  margin: auto;
+  padding: 20px;
+}
+
+.question {
+  line-height: 360px;
+}
+
+.large-font {
+  font-size: 3.5em;
+  text-align:center;
+}
+
+.timer {
+  height: 240px;
+  padding: 10px;
+  background: var(--light-color);
+  color: var(--medium-color);
+  text-align: center;
+}
+
+.timer-text {
+  padding: 55px;
+}
+
+@media screen and (max-width: 1183px) {
+  main {
+    flex-direction: column;
+  }
+
+  .question-box,
+  .results {
+    width: 90vw;
+  }
+
+  section {
+    background-color: var(--light-color);
+    margin: 20px auto;
+    width: 92vw;
+  }
+}
+
+@media screen and (max-width: 504px) {
+  .large-font {
+    font-size: 2em;
+  }
+
+  .reset-button {
+    font-size: 12px;
+    width: 20ox;
+    
+  }
+
+  .timer {
+    height: 200px;
+  }
+}
