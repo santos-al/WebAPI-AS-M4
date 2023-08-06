@@ -63,13 +63,6 @@ function startTimer() {
 
 startTimer();
 
-let currentQuestion = questions_list[questionNumber].question;
-let currentChoices = questions_list[questionNumber].options;
-
-console.log(currentChoices);
-console.log(currentQuestion);
-
-
 // print question and choices on screen
 questionBox.textContent = currentQuestion;
 choiceBox.textContent = currentChoices;
