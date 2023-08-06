@@ -95,11 +95,11 @@ section {
 }
 
 .question {
-  line-height: 360px;
+  line-height: 100px;
 }
 
 .large-font {
-  font-size: 3.5em;
+  font-size: 30px;
   text-align:center;
 }
 
