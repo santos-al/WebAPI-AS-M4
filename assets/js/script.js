@@ -78,3 +78,52 @@ function getQuestion() {
     questionBox.textContent = currentQuestion;
     choiceBox.textContent = currentChoices;
   }
+
+  function questionClick(event) {
+    var buttonEl = event.target;
+  
+    // if the clicked element is not a choice button, do nothing.
+    if (!buttonEl.matches('.choice')) {
+      return;
+    }
+  
+    // check if user guessed wrong
+    if (buttonEl.value !== questions[questionNumber].answer) {
+      // penalize time
+      time -= 15;
+  
+      if (time < 0) {
+        time = 0;
+      }
+  
+      // display new time on page
+      timerEl.textContent = time;
+  
+      // play "wrong" sound effect
+      sfxWrong.play();
+  
+      feedbackEl.textContent = 'Wrong!';
+    } else {
+      // play "right" sound effect
+      sfxRight.play();
+  
+      feedbackEl.textContent = 'Correct!';
+    }
+  
+    // flash right/wrong feedback on page for half a second
+    feedbackEl.setAttribute('class', 'feedback');
+    setTimeout(function () {
+      feedbackEl.setAttribute('class', 'feedback hide');
+    }, 1000);
+  
+    // move to next question
+    currentQuestionIndex++;
+  
+    // check if we've run out of questions
+    if (time <= 0 || currentQuestionIndex === questions.length) {
+      quizEnd();
+    } else {
+      getQuestion();
+    }
+  }
+  
