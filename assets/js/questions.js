@@ -1,4 +1,4 @@
-let questions_list = [
+let questions = [
     {
         title : 'Inside which HTML element do you Javascript?',
         choices: ['A = <javascript>', 'B = <js>', 'C = <script>', 'D = <ecma>'],
