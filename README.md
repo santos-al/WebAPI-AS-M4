@@ -1,18 +1,44 @@
-# WebAPI-AS-M4
-Code Quiz
+# Javascript code quiz
+  ## Description
+  This application allows users to take a Javascript quiz in their web browser. At the end of the quiz they can also save their highscore.
 
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
+  ## Table of Contents
 
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
+  * [Installation](#installation)
+
+  * [Usage](#usage)
+
+  * [License](#license)
+
+  * [Contributing](#contributing)
+
+  * [Tests](#tests)
+
+  * [Questions](#questions)
+
+  ## Installation
+  ```
+  There is nothing to install
+  ```
+
+  ## Usage
+  Just open the index html file in your browser to get started.
+
+  ## License
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg) 
+
+  (https://opensource.org/licenses/MIT)
+
+  ## Contributing
+  This application is complete.
+
+  ## Tests
+  ```
+  There are no tests for this application.
+  ```
+
+  ## Questions
+
+  If you have any questions about this project, please send me an email santosal2018@gmail.com. 
+  You can find more of my work at [santos-al](https://github.com/santos-al/).
+
