@@ -12,7 +12,7 @@ let questions = [
     {
         title : 'Which of the following is NOT an assignment operator in Javascript?',
         choices: ['=', '+=', '&&', '-='],
-        answer: '&'
+        answer: '&&'
     },
     {
         title : 'Which of the following is the correct way to write a "for" loop in Javascript?',
